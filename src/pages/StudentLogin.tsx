@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Eye } from "lucide-react";
@@ -78,7 +78,7 @@ const StudentLogin = () => {
             </Button>
 
             <p className="text-center text-sm text-gray-300 mt-4">
-              Não possui uma conta? <a href="#" className="text-blue-400 hover:underline">Cadastrar</a>
+              Não possui uma conta? <Link to="/student-register" className="text-blue-400 hover:underline">Cadastrar</Link>
             </p>
           </form>
         </div>
