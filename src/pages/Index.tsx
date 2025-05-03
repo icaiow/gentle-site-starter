@@ -1,7 +1,5 @@
-
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,8 +10,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground overflow-x-hidden">
-      <Navbar />
-      
       {/* Hero Section */}
       <div className="relative w-full min-h-[100vh] overflow-hidden flex items-center justify-center">
         {/* Background Image with Overlay */}
