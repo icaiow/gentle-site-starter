@@ -1,9 +1,12 @@
 
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(true);
@@ -32,6 +35,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               className="bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-md"
+              onClick={() => navigate('/student-login')}
             >
               Sou um aluno
             </Button>
