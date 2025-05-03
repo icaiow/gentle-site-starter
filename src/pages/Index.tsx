@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
@@ -12,15 +13,8 @@ const Index = () => {
     <div className="min-h-screen flex flex-col bg-background text-foreground overflow-x-hidden">
       {/* Hero Section */}
       <div className="relative w-full min-h-[100vh] overflow-hidden flex items-center justify-center">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/70 z-10"></div>
-          <img 
-            src="/lovable-uploads/338667d3-1a31-4ea9-9b1e-dc813f1acf71.png" 
-            alt="Cyberbullying awareness" 
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {/* Content with solid background instead of image */}
+        <div className="absolute inset-0 z-0 bg-black"></div>
         
         {/* Content */}
         <div 
@@ -55,68 +49,32 @@ const Index = () => {
       <div className="w-full bg-black py-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Statistic Card 1 */}
-            <div 
-              className="statistic-card p-6 rounded-lg flex flex-col items-center text-center"
-              style={{
-                backgroundImage: "url('/lovable-uploads/338667d3-1a31-4ea9-9b1e-dc813f1acf71.png')",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                position: "relative",
-              }}
-            >
-              <div className="absolute inset-0 bg-black/70 rounded-lg"></div>
+            {/* Statistic Card 1 - Removed background image */}
+            <div className="statistic-card p-6 rounded-lg flex flex-col items-center text-center bg-black/90">
               <div className="relative z-10">
                 <p className="text-2xl font-bold text-primary mb-2">+20%</p>
                 <p className="text-sm text-gray-300">DOS ADOLESCENTES JÁ SOFRERAM CYBERBULLYING NA ESCOLA</p>
               </div>
             </div>
 
-            {/* Statistic Card 2 */}
-            <div 
-              className="statistic-card p-6 rounded-lg flex flex-col items-center text-center"
-              style={{
-                backgroundImage: "url('/lovable-uploads/338667d3-1a31-4ea9-9b1e-dc813f1acf71.png')",
-                backgroundPosition: "center 25%",
-                backgroundSize: "cover",
-                position: "relative",
-              }}
-            >
-              <div className="absolute inset-0 bg-black/70 rounded-lg"></div>
+            {/* Statistic Card 2 - Removed background image */}
+            <div className="statistic-card p-6 rounded-lg flex flex-col items-center text-center bg-black/90">
               <div className="relative z-10">
                 <p className="text-2xl font-bold text-primary mb-2">+30%</p>
                 <p className="text-sm text-gray-300">RELATAM SENTIR-SE INSEGUROS NAS REDES SOCIAIS</p>
               </div>
             </div>
 
-            {/* Statistic Card 3 */}
-            <div 
-              className="statistic-card p-6 rounded-lg flex flex-col items-center text-center"
-              style={{
-                backgroundImage: "url('/lovable-uploads/338667d3-1a31-4ea9-9b1e-dc813f1acf71.png')",
-                backgroundPosition: "center 50%",
-                backgroundSize: "cover",
-                position: "relative",
-              }}
-            >
-              <div className="absolute inset-0 bg-black/70 rounded-lg"></div>
+            {/* Statistic Card 3 - Removed background image */}
+            <div className="statistic-card p-6 rounded-lg flex flex-col items-center text-center bg-black/90">
               <div className="relative z-10">
                 <p className="text-2xl font-bold text-primary mb-2">+40%</p>
                 <p className="text-sm text-gray-300">DOS CASOS NÃO SÃO REPORTADOS POR MEDO</p>
               </div>
             </div>
 
-            {/* Statistic Card 4 */}
-            <div 
-              className="statistic-card p-6 rounded-lg flex flex-col items-center text-center"
-              style={{
-                backgroundImage: "url('/lovable-uploads/338667d3-1a31-4ea9-9b1e-dc813f1acf71.png')",
-                backgroundPosition: "center 75%",
-                backgroundSize: "cover",
-                position: "relative",
-              }}
-            >
-              <div className="absolute inset-0 bg-black/70 rounded-lg"></div>
+            {/* Statistic Card 4 - Removed background image */}
+            <div className="statistic-card p-6 rounded-lg flex flex-col items-center text-center bg-black/90">
               <div className="relative z-10">
                 <p className="text-2xl font-bold text-primary mb-2">+65%</p>
                 <p className="text-sm text-gray-300">PRECISAM DE APOIO PSICOLÓGICO APÓS CASOS DE CYBERBULLYING</p>
